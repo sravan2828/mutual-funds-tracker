@@ -1,0 +1,14 @@
+.summaryContainer{
+	margin-top: 100px;
+	width: 500px;
+}
+.fundRow{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.card{
+	min-width: 275;
+	height: 339px;
+	overflow: scroll !important;
+}
