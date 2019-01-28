@@ -13,13 +13,14 @@ function SimpleCard(props) {
             <Card className={styles.card}>
             <CardContent>
                 {funds.map((fund) => {
+                    const {fundId, amount, curretValue, currentNav} = fund;
                     return (
                         <Fragment>
                         <div className={styles.fundRow}>
-                            <p>Fund Id : {fund.fundId}</p>
-                            <div>Invested Amount : {fund.amount}</div>
-                            <div>Curret Value : {fund.curretValue}</div>
-                            <div>Current Nav : {fund.curretValue}</div>
+                            <p>Fund Id : {fundId}</p>
+                            <p>Invested Amount : {amount}</p>
+                            <p>Curret Value : {curretValue}</p>
+                            <p>Current Nav : {currentNav}</p>
                         </div>
                         </Fragment>);
                 })}
